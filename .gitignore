@@ -1,0 +1,24 @@
+# Local environments and runtimes
+.venv/
+.venv_win/
+.tools/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Secrets and local settings
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Datasets, checkpoints and upstream code (fetched by setup, never committed)
+data/
+weights/
+third_party/
+cdlib/models/vendor/bit/networks.py
+cdlib/models/vendor/bit/resnet.py
+cdlib/models/vendor/bit/help_funcs.py
+
+# Regenerable outputs
+outputs/
+assets/demo/

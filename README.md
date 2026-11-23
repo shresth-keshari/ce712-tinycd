@@ -11,8 +11,13 @@ A replication of **TinyCD** (Codegoni, Lombardi & Ferrari, *Neural Computing and
 
 > **Before you run the app:** the Streamlit pages that use LEVIR-CD imagery need the LEVIR-CD256 dataset (2.48 GB) and the demo pairs regenerated from it. `bash setup.sh` does both, but a bare clone with no setup shows empty LEVIR pages. The Powai pages work from the bundled USGS pair.
 
+## Paper
+
+A two-page research-style write-up of this replication is in [`paper/tinycd_replication.pdf`](paper/tinycd_replication.pdf) (LaTeX source: [`paper/tinycd_replication.tex`](paper/tinycd_replication.tex), references: [`paper/references.bib`](paper/references.bib)). It covers the protocol, the benchmark with bootstrap intervals, object recall by size, cost, the mask probe, and the claims that hold and do not hold against BIT and ChangeFormer V6.
+
 ## Contents
 
+- [Paper](#paper)
 - [The problem](#the-problem)
 - [Approach](#approach)
 - [Results](#results)
@@ -68,7 +73,7 @@ flowchart TD
 
 ## Results
 
-**Benchmark: LEVIR-CD test, 2,048 pairs, threshold 0.5.** Paper values are from Codegoni et al. (2023), Table 4. Measured values are from `results/eval_*_test.json`. CIs are 95% bootstrap intervals over pairs, 2,000 resamples, seed 0 (`results/stats.json`).
+**Benchmark: LEVIR-CD test, 2,048 pairs, threshold 0.5.** Paper values are from Codegoni et al. (2023), Table 1 (LEVIR-CD comparison). Measured values are from `results/eval_*_test.json`. CIs are 95% bootstrap intervals over pairs, 2,000 resamples, seed 0 (`results/stats.json`).
 
 | Model | Paper F1 | Measured F1 | 95% CI | Measured IoU | Precision | Recall |
 |---|---:|---:|---|---:|---:|---:|

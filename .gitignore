@@ -22,3 +22,13 @@ cdlib/models/vendor/bit/help_funcs.py
 # Regenerable outputs
 outputs/
 assets/demo/
+
+# LaTeX build files (the compiled PDF is kept)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
